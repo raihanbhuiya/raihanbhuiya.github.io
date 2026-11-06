@@ -169,6 +169,11 @@ img,video{display:block;max-width:100%}
 .btn .arr{transition:transform .3s}
 .btn:hover .arr{transform:translateX(4px)}
 .details{margin-top:18px;display:flex;flex-wrap:wrap;gap:6px 22px;color:var(--cream-dim);font-size:13px}
+.socials{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:clamp(40px,6vw,64px)}
+.socials a{font-family:var(--display);font-weight:300;font-size:clamp(26px,3.6vw,44px);letter-spacing:-.02em;position:relative}
+.socials a span{font-family:var(--body);font-size:.45em;vertical-align:.6em;color:var(--wine-hi)}
+.socials a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1px;background:var(--wine-hi);transform:scaleX(0);transform-origin:0 50%;transition:transform .4s}
+.socials a:hover::after{transform:scaleX(1)}
 footer{display:flex;justify-content:space-between;gap:12px;margin-top:clamp(80px,12vw,140px);padding-top:18px;border-top:1px solid rgba(241,232,216,.14);color:var(--cream-dim)}
 
 /* cursor */
@@ -261,6 +266,12 @@ footer{display:flex;justify-content:space-between;gap:12px;margin-top:clamp(80px
       <button class="btn line" type="button" id="copyMail" data-cursor>Copy email</button>
     </div>
     <div class="details"><span>+60 11 6823 3924</span><span>raihanbhuiya77@gmail.com</span></div>
+    <nav class="socials" aria-label="Social links">
+      <a href="https://www.linkedin.com/in/raihan-bhuiya" target="_blank" rel="noopener">LinkedIn <span>↗</span></a>
+      <a href="https://www.instagram.com/notraihan.exe" target="_blank" rel="noopener">Instagram <span>↗</span></a>
+      <a href="https://www.youtube.com/@notraihanexe" target="_blank" rel="noopener">YouTube <span>↗</span></a>
+      <a href="https://www.facebook.com/share/1Ki7x7ryFr/" target="_blank" rel="noopener">Facebook <span>↗</span></a>
+    </nav>
     <footer>
       <span class="label">© 2026 Raihan Bhuiya</span>
       <a class="label" href="#top">Top ↑</a>
